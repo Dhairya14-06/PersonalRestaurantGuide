@@ -1,0 +1,7 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:padding="16dp"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <TextView android:text="Personal Restaurant Guide" android:textStyle="bold" android:textSize="20sp"/>
+    <TextView android:layout_marginTop="8dp" android:text="Group 16 — Parvkumar Mehta, Het Jasani, Dhairya Gohel, Tirth Rabadiya"/>
+    <TextView android:layout_marginTop="8dp" android:text="Prototype UI only."/>
+</LinearLayout>
