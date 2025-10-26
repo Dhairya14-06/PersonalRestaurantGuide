@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:startDestination="@id/restaurantListFragment">
+
+    <fragment
+        android:id="@+id/restaurantListFragment"
+        android:name="com.example.personalrestaurantguide.ui.list.RestaurantListFragment"
+        android:label="Restaurants">
+        <action android:id="@+id/action_list_to_detail" app:destination="@id/restaurantDetailFragment"/>
+        <action android:id="@+id/action_list_to_addEdit" app:destination="@id/addEditRestaurantFragment"/>
+        <action android:id="@+id/action_list_to_map" app:destination="@id/mapFragment"/>
+        <action android:id="@+id/action_list_to_about" app:destination="@id/aboutFragment"/>
+    </fragment>
+
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.example.personalrestaurantguide.ui.detail.RestaurantDetailFragment"
+        android:label="Details" />
+
+    <fragment
+        android:id="@+id/addEditRestaurantFragment"
+        android:name="com.example.personalrestaurantguide.ui.edit.AddEditRestaurantFragment"
+        android:label="Add / Edit" />
+
+    <fragment
+        android:id="@+id/mapFragment"
+        android:name="com.example.personalrestaurantguide.ui.map.MapFragment"
+        android:label="Map" />
+
+    <fragment
+        android:id="@+id/aboutFragment"
+        android:name="com.example.personalrestaurantguide.ui.about.AboutFragment"
+        android:label="About" />
+</navigation>
